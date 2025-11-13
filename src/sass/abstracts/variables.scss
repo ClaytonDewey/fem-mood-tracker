@@ -1,0 +1,33 @@
+@use '../util' as *;
+
+:root {
+  // Colors
+  // Neutral
+  --clr-neutral-900: #21214d;
+  --clr-neutral-600: #57577b;
+  --clr-neutral-300: #9393b7;
+  --clr-neutral-200: #cbcdd0;
+  --clr-neutral-0: #ffffff;
+
+  // Blue
+  --clr-blue-700: #2a4cd5;
+  --clr-blue-600: #4865db;
+  --clr-blue-300: #89caff;
+  --clr-blue-200: #c7d3f7;
+  --clr-blue-100: #e0e6fa;
+
+  // Red
+  --clr-red-700: #e66013;
+  --clr-red-300: #ff9b99;
+
+  // Others
+  --clr-indigo-200: #b8b1ff;
+  --clr-green-300: #89e780;
+  --clr-amber-300: #ffc97c;
+
+  // Gradient
+  --gradient-light: linear-gradient(180deg, #f5f5ff 73%, #e0e0ff 100%);
+
+  // Typography
+  --ff-primary: 'Reddit Sans', sans-serif;
+}
