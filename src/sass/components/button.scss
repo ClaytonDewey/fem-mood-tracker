@@ -1,0 +1,14 @@
+@use '../util' as *;
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: rem(1) solid transparent;
+  border-radius: rem(8);
+  padding-inline: rem(8);
+  font-family: inherit;
+  font-size: inherit;
+}
