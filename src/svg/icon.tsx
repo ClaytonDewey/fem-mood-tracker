@@ -2,6 +2,7 @@ import {
   IconAvatar,
   IconCheck,
   IconChevron,
+  IconClose,
   IconHappy,
   IconHappyColor,
   IconLogo,
@@ -32,6 +33,8 @@ export const Icon = ({ name }: { name: string }) => {
       return <IconCheck />;
     case 'chevron':
       return <IconChevron />;
+    case 'close':
+      return <IconClose />;
     case 'happy':
       return <IconHappy />;
     case 'happy-color':
@@ -73,7 +76,7 @@ export const Icon = ({ name }: { name: string }) => {
     case 'very-sad-color':
       return <IconVerySadColor />;
     default:
-      return null;
+      return <IconLogo />;
   }
 };
 

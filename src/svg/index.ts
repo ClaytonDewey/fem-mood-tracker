@@ -1,6 +1,7 @@
 export { default as IconAvatar } from './Avatar';
 export { default as IconCheck } from './Check';
 export { default as IconChevron } from './Chevron';
+export { default as IconClose } from './Close';
 export { default as IconHappy } from './Happy';
 export { default as IconHappyColor } from './HappyColor';
 export { default as Icon } from './icon';
