@@ -1,8 +1,10 @@
+import { Header } from './components';
+
 const App = () => {
   return (
-    <div>
-      <h1>Mood Tracker App</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 export default App;

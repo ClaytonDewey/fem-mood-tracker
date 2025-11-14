@@ -13,16 +13,23 @@ html {
   font-weight: normal;
 }
 
-body {
-  position: relative;
-}
-
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--ff-primary);
+  background-image: var(--gradient);
+  height: 100%;
+}
+
+body {
+  position: relative;
+  padding: rem(40) rem(16);
+
+  @include breakpoint(medium) {
+    padding-inline: rem(32);
+  }
 }
 
 .sr-only {
@@ -33,4 +40,10 @@ body {
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
