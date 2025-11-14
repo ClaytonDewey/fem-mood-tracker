@@ -1,9 +1,10 @@
-import { Header } from './components';
+import { Header, ModalWrapper } from './components';
 
 const App = () => {
   return (
     <>
       <Header />
+      <ModalWrapper />
     </>
   );
 };

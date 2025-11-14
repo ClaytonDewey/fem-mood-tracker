@@ -18,6 +18,16 @@
     gap: rem(10);
   }
 
+  &-primary {
+    height: rem(66);
+    background-color: var(--clr-blue-600);
+    color: var(--clr-neutral-0);
+    font-size: rem(24);
+    font-weight: 600;
+    line-height: 140%;
+    width: 100%;
+  }
+
   &-close {
     height: rem(32);
     width: rem(32);

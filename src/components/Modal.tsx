@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '.';
+import { Button, Input } from '.';
 import { Icon } from '../svg';
 
 type ModalProps = {
@@ -21,10 +21,38 @@ const Modal = ({ onClose }: ModalProps) => {
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}>
-        <h2>Modal Title</h2>
-        <p>This is the modal content.</p>
-        <Button type='button' className='btn btn-close' onClick={onClose}>
-          <Icon name='close' />
+        <h2>Log your mood</h2>
+        <p>How was your mood today?</p>
+
+        <div className='form-wrapper'>
+          <div className='form-check'>
+            <Input
+              className='form-check-input'
+              type='radio'
+              name='mood'
+              value='very-happy'
+              id='very-happy'
+            />
+            <label htmlFor='very-happy' className='form-check-label'>
+              Very Happy <Icon name='very-happy-color' />
+            </label>
+          </div>
+          <div className='form-check'>
+            <Input
+              className='form-check-input'
+              type='radio'
+              name='mood'
+              value='happy'
+              id='happy'
+            />
+            <label htmlFor='happy' className='form-check-label'>
+              Very Happy <Icon name='happy-color' />
+            </label>
+          </div>
+        </div>
+
+        <Button type='button' className='btn btn-primary' onClick={onClose}>
+          Submit
         </Button>
       </motion.div>
     </motion.div>
