@@ -11,4 +11,10 @@
   padding-inline: rem(8);
   font-family: inherit;
   font-size: inherit;
+
+  &-profile {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
 }
