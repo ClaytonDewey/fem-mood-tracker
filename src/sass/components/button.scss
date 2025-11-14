@@ -17,4 +17,14 @@
     align-items: center;
     gap: rem(10);
   }
+
+  &-close {
+    height: rem(32);
+    width: rem(32);
+    border: 1px solid var(--clr-blue-600);
+    svg {
+      width: rem(16);
+      height: rem(16);
+    }
+  }
 }
